@@ -123,7 +123,7 @@ struct TRootHandler_WoW : public TFileTreeRoot
         // Create the file for dumping listfile
         if(szDumpFile && szDumpFile[0])
         {
-            fp = _tfopen(szDumpFile, _T("wt"));
+            fp = fopen(szDumpFile, _T("wt"));
         }
     }
 
